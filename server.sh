@@ -1,8 +1,11 @@
-#!/bin/bash
-
+#!/bin/sh
+#read -p "Port To start webserver:" PORT
 PORT=4000
 
-function init() {
+
+
+#function init() {
+init() {
   echo "-----------------------------------------------------"
   echo -n "[INFO] Start at: "
   date "+%Y/%m/%d-%H:%M:%S"
@@ -13,7 +16,8 @@ function init() {
   echo "-----------------------------------------------------"
 }
 
-function response() {
+#function response() {
+response() {
   echo "HTTP/1.0 200 OK"
   echo "Content-Type: text/plain"
   echo ""
@@ -22,18 +26,18 @@ function response() {
 
 
 ##################################################
-# main部分
+# mainFunction
 ##################################################
 init
 
-# ログの設定
-LOG_OUT="stdout.log"
-LOG_ERR="stderr.log"
+# Logging
+#LOG_OUT="stdout.log"
+#LOG_ERR="stderr.log"
 
-exec 1> >(tee -a $LOG_OUT)
-exec 2> >(tee -a $LOG_ERR)
+#exec 1>> (tee -a $LOG_OUT)
+#exec 2>> (tee -a $LOG_ERR)
 
-# 名前付きパイプがあった場合は先に消しておく
+# If there is a named pipe, delete it first
 if [ -e "./stream" ]; then
   rm stream
 fi
