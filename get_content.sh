@@ -3,8 +3,9 @@
 FILE_NAME=$1
 STATIC_DIR=./static
 
-function validate() {
-  if [[ "$FILE_NAME" =~ ^.*\.\.\/.*$ ]]; then
+#function validate() {
+ function validate() {
+ if [[ "$FILE_NAME" =~ ^.*\.\.\/.*$ ]]; then
     echo "HTTP/1.0 400 Bad Request"
     echo "Content-Type: text/html"
     exit 0
@@ -12,7 +13,7 @@ function validate() {
 }
 
 ##################################################
-# main部分
+# mainFunction
 ##################################################
 
 validate
