@@ -4,7 +4,7 @@
 
 ## Overview
 
-- macOS
+- debian
 - Bash
 
 ## How to run
@@ -12,12 +12,17 @@
 ### Install Dependences command and give execution permission
 
 ```
-make setup
+sh setup.sh
 ```
 
 ### Run server
 
 ```
-make run
+sh server.sh &
 ```
+### Kill server
+```
+sh kill.sh
+```
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
