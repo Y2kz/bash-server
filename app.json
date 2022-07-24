@@ -1,0 +1,7 @@
+{
+  "name": "Bash webserver",
+  "description": "A simple test Bash webserver",
+  "repository": "https://ghttps://github.com/Y2kz/bash-server",
+  "logo": "https://github.com/Y2kz/bash-server/blob/master/logo/logo.png",
+  "keywords": ["bash", "simple", "webserver"]
+}
