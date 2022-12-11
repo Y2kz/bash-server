@@ -25,4 +25,3 @@ sh server.sh &
 sh kill.sh
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
