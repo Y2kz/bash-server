@@ -3,18 +3,18 @@
 PORT=4000
 
 
-
+#Removed the start up and figlet not available in every distro by default so disabling
 #function init() {
-init() {
-  echo "-----------------------------------------------------"
-  echo -n "[INFO] Start at: "
-  date "+%Y/%m/%d-%H:%M:%S"
-  echo "-----------------------------------------------------"
-  figlet "bash server"
-  echo "-----------------------------------------------------"
-  echo "The Server is running at http://127.0.0.1:${PORT}"
-  echo "-----------------------------------------------------"
-}
+#init() {
+#  echo "-----------------------------------------------------"
+#  echo -n "[INFO] Start at: "
+#  date "+%Y/%m/%d-%H:%M:%S"
+#  echo "-----------------------------------------------------"
+#  figlet "bash server"
+#  echo "-----------------------------------------------------"
+#  echo "The Server is running at http://127.0.0.1:${PORT}"
+#  echo "-----------------------------------------------------"
+#}
 
 #function response() {
 response() {
@@ -28,8 +28,9 @@ response() {
 ##################################################
 # mainFunction
 ##################################################
-init
+#init
 
+#Disabled Logging
 # Logging
 #LOG_OUT="stdout.log"
 #LOG_ERR="stderr.log"
