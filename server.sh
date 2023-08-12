@@ -29,7 +29,7 @@ response() {
 # mainFunction
 ##################################################
 #init
-
+echo "The Server is running at http://127.0.0.1:${PORT}"
 #Disabled Logging
 # Logging
 #LOG_OUT="stdout.log"
